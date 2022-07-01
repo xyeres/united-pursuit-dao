@@ -14,7 +14,8 @@ const config: HardhatUserConfig = {
   solidity: "0.8.9",
   networks: {
     hardhat: {
-      chainId: 31337
+      chainId: 31337,
+      allowUnlimitedContractSize: true,
     },
     localhost: { // network when `yarn hardhat node` runs
       chainId: 31337
